@@ -1,0 +1,10 @@
+<p>name-input works!</p>
+<input [value]="inputValue" (keyup)="keyUpHandler($event)" type="text" />
+{{inputValue}}
+<button (click)="btnClickHandle('Text')">
+    Click me
+</button>
+<input type="text" #inputEl>
+{{inputEl.value}}
+<input type="text" [value]='inputVal'>
+inputVal: {{inputVal}}
